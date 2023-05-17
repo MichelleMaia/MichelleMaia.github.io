@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 62.5%;
+  line-height: 1;
+  color: #444;
+}
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  justify-items: start;
+  column-gap: 2.5rem;
+}
+.header {
+  width: 100%;
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 2rem;
+  padding: 0 1rem;
+  border-bottom: 5px solid #107107;
+  margin-bottom: 2rem;
+}
+.face {
+  height: 160px;
+  border-radius: 10%;
+}
+h1 {
+  font-size: 440%;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+.details {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  column-gap: 3rem;
+  row-gap: 1rem;
+  font-size: 200%;
+}
+.mail {
+  color: #107107;
+}
+.details-icons {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.details-icons a:link,
+.details-icons a:visited {
+  text-decoration: none;
+  color: #444;
+}
+.details-icons a:hover,
+.details-icons a:active {
+  color: #107107;
+}
+.details-links {
+  grid-column: 1 / -1;
+  font-size: 100%;
+}
+.details-links a:link,
+.details-links a:visited,
+.details-links a:hover,
+.details-links a:active {
+  color: #107107;
+}
+.columnA,
+.columnB {
+  font-size: 150%;
+}
+.columnA {
+  padding-left: 1rem;
+}
+section {
+  margin-bottom: 1.5rem;
+}
+h2 {
+  font-size: 170%;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+.about-me p {
+  line-height: 1.4;
+}
+.skills {
+  background-color: #e7f1e6;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.skills p {
+  line-height: 1.5;
+  font-weight: 500;
+}
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  line-height: 1.2;
+}
+.education-list li:first-child,
+.professional-list li:first-child,
+.project-list li:first-child {
+  font-weight: 500;
+  color: #107107;
+}
+.education-list li:nth-child(n + 3),
+.professional-list li:nth-child(n + 3),
+.project-list li:nth-child(n + 2) {
+  list-style: disc;
+}
+.education-list,
+.professional-list {
+  margin-bottom: 1rem;
+}
